@@ -122,4 +122,4 @@ elif select_type_detect == "Live" :
         index = st.selectbox("Select Device index : " , 
                               (0, 1 , 2))
         if st.button('Run Detection'):           
-            os.system(f"python obj_det_and_trk.py --source {index} --view-img --conf-thres {conf_thres} --device {DEVICE_NAME} --project '{cam_id}' --color-box")
+            os.system(f"python objectDetect_tracking.py --source {index} --view-img --conf-thres {conf_thres} --device {DEVICE_NAME} --project '{cam_id}' --color-box")
